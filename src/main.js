@@ -1,5 +1,13 @@
 $ = jQuery = require('jquery');
 
-var App = console.log('Hello world from Browserify');
+var React = require('react');
+var Home = require('./components/homePage');
+var About = require('./components/about/aboutPages');
 
-module.exports = App;
+var App = React.createClass({
+    render: function() {
+        var Child;
+    }
+});
+
+React.render(<Home />, document.getElementById('app'));
